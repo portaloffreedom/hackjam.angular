@@ -1,11 +1,14 @@
 import { Component } from '@angular/core';
 
+// Book Type
 export class Book {
-  title: String;
+  title: Number;
   cover: String;
   category: String;
 }
 
+// TODO: Category Type
+export class Category {}
 
 @Component({
   selector: 'bookstore',
@@ -14,11 +17,12 @@ export class Book {
 })
 
 export class AppComponent {
-  books: Book [] = mockBooks;
+  books: Book [] = []; // use mocks data instead
+  categories: String [] = ['All', 'Web']; // use mocks data instead
   navClosed: Boolean = true;
 
   clicked() {
-    console.log('has been clicked');
+    console.log('Will be implemented in the next section');
   }
 
   search(){}

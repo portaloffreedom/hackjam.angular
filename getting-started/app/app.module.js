@@ -19,7 +19,7 @@ var AppModule = (function () {
         core_1.NgModule({
             imports: [platform_browser_1.BrowserModule],
             declarations: [],
-            bootstrap: [app_component_1.AppComponent]
+            bootstrap: [app_component_1.AppComponent] // Module you need to bootstrap
         }), 
         __metadata('design:paramtypes', [])
     ], AppModule);

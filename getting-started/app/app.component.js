@@ -9,19 +9,28 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+// Book Type
 var Book = (function () {
     function Book() {
     }
     return Book;
 }());
 exports.Book = Book;
+// TODO: Category Type
+var Category = (function () {
+    function Category() {
+    }
+    return Category;
+}());
+exports.Category = Category;
 var AppComponent = (function () {
     function AppComponent() {
-        this.books = mockBooks;
+        this.books = []; // use mocks data instead
+        this.categories = ['All', 'Web']; // use mocks data instead
         this.navClosed = true;
     }
     AppComponent.prototype.clicked = function () {
-        console.log('has been clicked');
+        console.log('Will be implemented in the next section');
     };
     AppComponent.prototype.search = function () { };
     AppComponent.prototype.toggleSideBar = function () {
